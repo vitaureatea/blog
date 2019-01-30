@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcfa8a2c-9c0d-45a0-b382-798b7d9299d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/post/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/blog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
               </folding>
@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/post/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
-              <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+            <state relative-caret-position="-532">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
               </folding>
@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/post/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/post/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -158,10 +158,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="608" />
-    <option name="y" value="113" />
+    <option name="x" value="156" />
+    <option name="y" value="155" />
     <option name="width" value="1428" />
-    <option name="height" value="961" />
+    <option name="height" value="918" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -259,15 +259,15 @@
       <workItem from="1548680323058" duration="7370000" />
       <workItem from="1548724966097" duration="7066000" />
       <workItem from="1548732199201" duration="2164000" />
-      <workItem from="1548734833434" duration="25784000" />
+      <workItem from="1548734833434" duration="26382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42384000" />
+    <option name="totallyTimeSpent" value="42982000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="608" y="113" width="1428" height="961" extended-state="0" />
+    <frame x="156" y="155" width="1428" height="918" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32090643" />
@@ -284,7 +284,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21886337" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23086734" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -365,7 +365,7 @@
     <entry file="file://$PROJECT_DIR$/post/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -375,7 +375,7 @@
     <entry file="file://$PROJECT_DIR$/blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
@@ -409,7 +409,7 @@
     <entry file="file://$PROJECT_DIR$/post/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -419,7 +419,7 @@
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
           </folding>
@@ -428,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/post/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        <state relative-caret-position="-532">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
           </folding>

@@ -6,7 +6,7 @@ class User(models.Model):
     password = models.CharField(max_length=128,null=False)
 
     def __str__(self):
-        return self.id,self.name
+        return '< %s : %s >' %(self.id,self.name)
 
     class Meta:
         db_table = 'user'

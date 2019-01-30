@@ -11,8 +11,8 @@ logging.basicConfig(format=FORMATE,level=logging.INFO)
 from .models import User
 
 #生成token
-#exp 设定过期的时间
 def gen_token(user_id):
+    # exp 设定过期的时间
     return jwt.encode({
         'user_id': user_id,
         'exp': int(datetime.datetime.now().timestamp()) + 60*15
@@ -26,12 +26,13 @@ def authenticate(fc):
         try:
             payload = jwt.decode(token,settings.SECRET_KEY)
             user_id = payload['user_id']
-            user = User.objects.filter(pk=user_id)
+            #filter和get返回类型不一样
+            user = User.objects.get(pk=user_id)
             request.user = user
             #注意 这里在request里加了一个user对象，用这个装饰器的注意了
-            return fc(request)
         except Exception as e:
             return HttpResponse(status=401)
+        return fc(request)
     return wrapper
 
 #注册

@@ -1,18 +1,35 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import AppState from './AppState';
-import App from './App';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Login from './comporents/login';
 
-const appState = new AppState();
-
-render(
-  <AppContainer>
-    <App appState={appState} />
-  </AppContainer>,
-  document.getElementById('root')
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
 );
 
-if (module.hot) {
-  module.hot.accept('./App', () => { render(App) })
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
+
+//前端 静态路由
+class Root extends React.Component {
+  render () {
+    return (
+      <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/login" component={Login} />
+        <Route path="/about" component={About} />
+      </div>
+    </Router>
+    );
+  }
 }
+
+ReactDOM.render(<Root />, document.getElementById('root'))
+
+//exact 严格匹配

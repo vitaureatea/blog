@@ -1,1 +1,1 @@
-#react-mobx-starter
+#react

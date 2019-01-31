@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from './comporents/login';
+import Reg from './comporents/reg';
 
 const Home = () => (
   <div>
     <h2>Home</h2>
   </div>
 );
+//箭头函数 他等于
+// function Home () {
+//    return  (
+//   <div>
+//      <h2>Home</h2>
+//    </div>  
+//) 
+//}  如下也一样
 
 const About = () => (
   <div>
@@ -21,9 +30,17 @@ class Root extends React.Component {
     return (
       <Router>
       <div>
+        <ul>
+          <li><a href="/">主页</a></li>
+          <li><a href="/login">登录</a></li>
+          <li><a href="/reg">注册</a></li>
+          <li><a href="/about">关于</a></li>
+        </ul>
+
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
-        <Route path="/about" component={About} />
+        <Route exact path="/reg" component={Reg} />
+        <Route exact path="/about" component={About} />
       </div>
     </Router>
     );
@@ -31,5 +48,4 @@ class Root extends React.Component {
 }
 
 ReactDOM.render(<Root />, document.getElementById('root'))
-
 //exact 严格匹配

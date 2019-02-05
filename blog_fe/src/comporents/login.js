@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import '../css/login.css'
 import UserService from '../service/user';
+import {observer} from 'mobx-react'
 
+@observer
 export default class Login extends React.Component {
-    
-    state = {'ret':-1};
-    
+
     constructor (props) {
         super(props)
         this.service = new UserService();
@@ -25,10 +25,9 @@ export default class Login extends React.Component {
     }
 
     render () {
-       if (this.state.ret != -1) {
-         console.log(this.state.ret)
-         return (<Redirect to='/home' />);
-       }
+        if (this.service.ret != -1) {
+            return (<Redirect to='/home' />);
+        }
       return (
         <div className="login-page">
             <div className="form">

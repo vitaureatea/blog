@@ -9,14 +9,6 @@ const Home = () => (
     <h2>Home</h2>
   </div>
 );
-//箭头函数 他等于
-// function Home () {
-//    return  (
-//   <div>
-//      <h2>Home</h2>
-//    </div>  
-//) 
-//}  如下也一样
 
 const About = () => (
   <div>

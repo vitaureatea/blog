@@ -26,7 +26,11 @@ export default class Login extends React.Component {
 
     render () {
         if (this.service.ret != -1) {
-            return (<Redirect to='/home' />);
+            return (<Redirect to='/' />);
+        }
+        if (this.service.errMsg) {
+            alert(this.service.errMsg);
+            this.service.errMsg = '';
         }
       return (
         <div className="login-page">

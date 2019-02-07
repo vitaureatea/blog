@@ -51,7 +51,7 @@ def reg(request):
         user.password = bcrypt.hashpw(password.encode(),bcrypt.gensalt())
         try:
             user.save()
-            return JsonResponse({'user_id': user.id })
+            return JsonResponse({'user_id': user.id})
         except Exception as e:
             return
     except Exception as e:

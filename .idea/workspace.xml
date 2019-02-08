@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fcfa8a2c-9c0d-45a0-b382-798b7d9299d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_fe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog_fe/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog_fe/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog_fe/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_fe/src/comporents/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog_fe/src/comporents/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_fe/src/comporents/reg.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog_fe/src/comporents/reg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_fe/src/service/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog_fe/src/service/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+            <state relative-caret-position="247">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
               </folding>
@@ -163,9 +161,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="442" />
-    <option name="y" value="12" />
-    <option name="width" value="1428" />
+    <option name="x" value="217" />
+    <option name="y" value="79" />
+    <option name="width" value="1336" />
     <option name="height" value="918" />
   </component>
   <component name="ProjectView">
@@ -271,13 +269,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52113000" />
+    <option name="totallyTimeSpent" value="52727000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="442" y="12" width="1428" height="918" extended-state="1" />
+    <frame x="217" y="79" width="1336" height="918" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32090643" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34404388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -408,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+        <state relative-caret-position="247">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
           </folding>

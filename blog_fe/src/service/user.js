@@ -21,7 +21,7 @@ export default class UserService {
         }).then(response => {
             console.log(response.data);
             //localstorage 本地化存储token 和 过期设定 固定写法
-            store.set('token',response.data.token,(new Date()).getTime() + (15*60*1000));
+            store.set('token',response.data.token,(new Date()).getTime() + (2*3600*1000));
             this.ret = Math.random() * 100;
         }).catch( error => {
             this.errMsg = '登录失败，请检查登录信息';

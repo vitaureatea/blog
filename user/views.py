@@ -15,7 +15,7 @@ def gen_token(user_id):
     # exp 设定过期的时间
     return jwt.encode({
         'user_id': user_id,
-        'exp': int(datetime.datetime.now().timestamp()) + 60*15
+        'exp': int(datetime.datetime.now().timestamp()) + 60*60*2
     },settings.SECRET_KEY
     ).decode()
 

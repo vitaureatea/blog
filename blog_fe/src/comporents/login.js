@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom
 import '../css/login.css'
 import UserService from '../service/user';
 import {observer} from 'mobx-react'
+import {message} from 'antd'
+import 'antd/lib/message/style'
+
 
 @observer
 export default class Login extends React.Component {
@@ -29,8 +32,9 @@ export default class Login extends React.Component {
             return (<Redirect to='/' />);
         }
         if (this.service.errMsg) {
-            alert(this.service.errMsg);
-            this.service.errMsg = '';
+            message.info(this.service.errMsg,3,()=>{
+                this.service.errMsg = '';
+            });
         }
       return (
         <div className="login-page">

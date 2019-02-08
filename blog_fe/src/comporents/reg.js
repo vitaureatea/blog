@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route, Link, Redirect} from "react-router-dom";
 import '../css/login.css'
 import UserService from '../service/user';
 import {observer} from "mobx-react";
+import {message} from 'antd'
+import 'antd/lib/message/style'
 
 
 const service = new UserService();
@@ -24,7 +26,7 @@ class _Reg extends React.Component {
         //判断是不是邮箱
         let sReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
         if (! sReg.test(fm[1].value)) {
-            alert('邮箱地址错误');
+            message.info('邮箱地址错误',3);
         }
         else {
             if (fm[2].value.length >= 6 ) {
@@ -33,12 +35,12 @@ class _Reg extends React.Component {
                     //React中的每一个组件，都包含有一个属性（props），属性主要是从父组件传递给子组件的
                     //，在组件内部，我们可以通过this.props获取属性对象
                 } else {
-                    alert('两次密码不一致！');
+                    message.info('两次密码不一致！',3);
                     console.log('error');
                 }
             }
             else {
-                alert('密码长度不足6位');
+                message.info('密码长度不足6位',3);
                 console.log('error')
             }
         }
@@ -47,6 +49,11 @@ class _Reg extends React.Component {
     render () {
         if (this.props.service.ret != -1) {
             return (<Redirect to='/login'/>);
+        }
+        if (this.props.service.errMsg) {
+            message.info(this.props.service.errMsg,3,()=>{
+                this.props.service.errMsg = '';
+            })
         }
       return (
         <div className="login-page">

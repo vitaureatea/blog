@@ -25,38 +25,34 @@ const About = () => (
 );
 
 //前端 静态路由
-class Root extends React.Component {
+class Index extends React.Component {
   render () {
     return (
     <Router>
-      <Layout className="layout">
+      <Layout>
         <Header>
         <Menu mode="horizontal" theme="dark">
-            <Menu.Item key="home">
-              <Icon type="home" /><a href="/">主页</a>
-            </Menu.Item>
-            <Menu.Item key="login">
-              <Icon type="login" /><a href="/login">登录</a>
-            </Menu.Item>
-            <Menu.Item key="reg">
-              <Icon type="reg" /><a href="/reg">注册</a>
-            </Menu.Item>
-            <Menu.Item key="about">
-              <Icon type="about" /><a href="/about">关于</a>
-            </Menu.Item>
+            <Menu.Item key="home"><Link to="/">主页</Link></Menu.Item>
+            <Menu.Item key="login"><Link to="/login">登录</Link></Menu.Item>
+            <Menu.Item key="reg"><Link to="/reg">注册</Link></Menu.Item>
+            <Menu.Item key="about"><Link to="/about">关于</Link></Menu.Item>
         </Menu>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/reg" component={Reg} />
-        <Route exact path="/about" component={About} />
         </Header>
-         <Content style={{ padding: '0 50px' }}></Content>
-         <footer></footer>
+         <Content style={{ padding: '8px 50px' }}>
+           <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+             <Route exact path="/" component={Home} />
+             <Route exact path="/login" component={Login} />
+             <Route exact path="/reg" component={Reg} />
+             <Route exact path="/about" component={About} /></div>
+         </Content>
+         <Footer style={{ textAlign: 'center' }}>
+           Ant Design ©2018 Created by Ant UED
+         </Footer>
       </Layout>
     </Router>
     );
   }
 }
 
-ReactDOM.render(<Root />, document.getElementById('root'))
+ReactDOM.render(<Index />, document.getElementById('index'));
 //exact 严格匹配

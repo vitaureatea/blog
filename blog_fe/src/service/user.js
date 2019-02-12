@@ -4,7 +4,7 @@ import axios from "axios";
 import store from "store";
 import {observable} from 'mobx'
 
-store.addPlugin(require('store/plugins/expire'));//过期插件
+store.addPlugin(require('store/plugins/expire'));//token过期插件
 
 
 //由于不用于前端展示，所以不用继承那个 React.Component 是纯es6 类,不是组件
